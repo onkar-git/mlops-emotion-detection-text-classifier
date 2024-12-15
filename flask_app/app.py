@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 from preprocessing_utility import normalize_text
 import dagshub
 import mlflow

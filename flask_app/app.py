@@ -13,6 +13,8 @@ import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+import dagshub
+#from preprocessing_utility import normalize_text
 
 
 def lemmatization(text):
@@ -132,16 +134,16 @@ if __name__ == "__main__":
 
 
 
-#load model from mlflow model registry
-#mlflow.set_tracking_uri('https://dagshub.com/onkar-git/mlops-emotion-detection-text-classifier.mlflow')
-#dagshub.init(repo_owner='onkar-git', repo_name='mlops-emotion-detection-text-classifier', mlflow=True)
+# #load model from mlflow model registry
+# mlflow.set_tracking_uri('https://dagshub.com/onkar-git/mlops-emotion-detection-text-classifier.mlflow')
+# dagshub.init(repo_owner='onkar-git', repo_name='mlops-emotion-detection-text-classifier', mlflow=True)
 
 
 
 
 
 # model_name = "my_model"
-# model_version = 5
+# model_version = 21
 
 # model_uri = f'models:/{model_name}/{model_version}'
 
@@ -151,20 +153,20 @@ if __name__ == "__main__":
 
 
 
-# Set up DagsHub credentials for MLflow tracking
-# dagshub_token = os.getenv("DAGSHUB_PAT")
-# if not dagshub_token:
-#     raise EnvironmentError("DAGSHUB_PAT environment variable is not set")
+# #Set up DagsHub credentials for MLflow tracking
+# # dagshub_token = os.getenv("DAGSHUB_PAT")
+# # if not dagshub_token:
+# #     raise EnvironmentError("DAGSHUB_PAT environment variable is not set")
 
-# os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
-# os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
+# # os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
+# # os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
 
-# dagshub_url = "https://dagshub.com"
-# repo_owner = "campusx-official"
-# repo_name = "mlops-project-2"
+# # dagshub_url = "https://dagshub.com"
+# # repo_owner = "onkar89"
+# # repo_name = "mlops-emotion-detection-text-classifier"
 
-# Set up MLflow tracking URI
-# mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
+# #Set up MLflow tracking URI
+# # mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
 
 # app = Flask(__name__)
 

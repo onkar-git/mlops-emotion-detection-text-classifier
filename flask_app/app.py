@@ -13,7 +13,7 @@ import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import dagshub
+#import dagshub
 #from preprocessing_utility import normalize_text
 
 

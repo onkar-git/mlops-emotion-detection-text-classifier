@@ -89,4 +89,4 @@ jobs:
             docker pull 650251684767.dkr.ecr.us-east-1.amazonaws.com/emotion_ecr:latest
             docker stop my-app || true
             docker rm my-app || true
-            docker run -d -p 80:5000 -e DAGSHUB_PAT=084d8b1e983b4dca951a37b36489a5e50b1152b3 --name emotion-app 650251684767.dkr.ecr.us-east-1.amazonaws.com/emotion_ecr:latest
+            docker run -d -p 80:5000 -e DAGSHUB_PAT = ${{ secrets.DAGSHUB_PAT }} --name emotion-app 650251684767.dkr.ecr.us-east-1.amazonaws.com/emotion_ecr:latest
